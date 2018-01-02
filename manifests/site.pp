@@ -1,6 +1,5 @@
 node default {
-  file {'/root/README':
-    ensure => file,
-    content => 'this is content from git hub',
-  }
+}
+node master.puppet.vm {
+  include role::master_server
 }
